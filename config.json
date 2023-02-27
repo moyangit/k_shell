@@ -13,7 +13,7 @@
     ]
   },
   "inbounds": [{
-    "port": 10175,
+    "port": 11175,
     "tag":"mem-proxy",
     "protocol": "vmess",
     "settings": {
