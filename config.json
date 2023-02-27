@@ -13,7 +13,7 @@
     ]
   },
   "inbounds": [{
-    "port": 11175,
+    "port": local_flow_port,
     "tag":"mem-proxy",
     "protocol": "vmess",
     "settings": {
