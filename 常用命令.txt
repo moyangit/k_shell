@@ -1,0 +1,493 @@
+15827557873 朱  udt
+
+[{"ip": "120.197.88.165", "port": 20207}, {"ip": "183.232.30.21", "port": 20207}, {"ip": "120.240.86.52", "port": 20207}, {"ip": "cm1.worldmuseum.buzz", "port": 20207}]
+
+["1457967341210591233", "1457967219194093570", "1457967123559768066", "1462037749585948674"]
+
+wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+chmod 776 ./bbr.sh
+
+wget "https://github.com/cx9208/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && sudo ./tcp.sh
+
+./bbr.sh
+sudo apt -y install lrzsz wget curl vim sudo iperf3
+wget -qO- https://get.docker.com/ | sudo sh
+
+sudo apt install docker-ce
+
+
+yum -y install lrzsz wget curl vim iperf3
+service docker start
+chkconfig docker on
+sudo systemctl enable docker.service
+
+
+docker run --net host -d -p 20207:20207 -p 20208:20208 --log-driver="none" --restart=always -v /docker/config/tpr:/config -v /docker/logs/tpr:/logs -v /docker/cert/tpr:/cert -v /docker/data/tpr:/data --name=tpr -e "logging.level.com.vpn.serv=info" -e "JAVA_OPTS=-Xms2g -Xmx4g" -e "spring.profiles.active=prod" -e "server.uid=1642919920155504641" -e "server.port=20208" -e "vpn.proxy.localPort=20207" --init moyandoc/kpr:1.7.4-SNAPSHOT
+
+
+docker run --net host -d -p 20207:20207 -p 20208:20208 --log-driver="none" --restart=always -v /docker/config/tpr:/config -v /docker/logs/tpr:/logs -v /docker/cert/tpr:/cert -v /docker/data/tpr:/data --name=tpr -e "logging.level.com.vpn.serv=info" -e "JAVA_OPTS=-Xms2g -Xmx4g" -e "spring.profiles.active=prod" -e "server.uid=1522155421342117889" -e "server.port=20208" -e "vpn.proxy.localPort=20207" --init moyandoc/kpr:1.7.3-SNAPSHOT
+
+
+docker run --net host -d -p 20207:20207 -p 30208:30208 --log-driver="none" --restart=always -v /docker/config/tpr:/config -v /docker/logs/tpr:/logs -v /docker/cert/tpr:/cert -v /docker/data/tpr:/data --name=tpr -e "logging.level.com.vpn.serv=info" -e "JAVA_OPTS=-Xms2g -Xmx4g" -e "spring.profiles.active=prod" -e "server.uid=1586599572917469185" -e "server.port=30208" -e "vpn.proxy.localPort=20207" --init moyandoc/kpr:1.7.4-SNAPSHOT
+
+
+
+docker run -itd --privileged=true --net host -d -p 20207:20207 -p 20218:20218 --log-driver="none" --restart=always -v /docker/config/tpr:/config -v /docker/logs/tpr:/logs -v /docker/cert/tpr:/cert -v /docker/data/tpr:/data --name=tpr -e "logging.level.com.vpn.serv=info" -e "JAVA_OPTS=-Xms2g -Xmx4g" -e "spring.profiles.active=prod" -e "server.uid=1584413385687580673" -e "server.port=20218" -e "vpn.proxy.localPort=20207" --init moyandoc/kpr:1.7.4-SNAPSHOT
+
+wget https://gitee.com/t_deploy/shell_v2/raw/master/tanz/nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh
+
+aa4991e6118dd39056
+
+net.core.default_qdisc = fq
+net.ipv4.tcp_congestion_control = bbr
+
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+
+18007176772
+
+13720263694
+
+sudo usermod -aG docker root1
+sudo usermod -aG docker QphDKR3808
+
+sudo usermod -aG docker azureuser
+
+sudo usermod -aG docker azroot
+sudo usermod -aG docker biaosun
+
+ 214748364800  322122547200(300G) 429496729600(400G) 536870912000(500G) 858993459200(800G) 1099511627776(1T)
+nohup ./traffic_limit-v2.sh eth0 322122547200 &
+nohup ./traffic_limit-v2.sh eth0 214748364800 &
+nohup ./traffic_limit-v2.sh eth0 536870912000 &
+
+nohup ./traffic_limit-v2.sh eth0 397284474880 &
+
+nohup ./traffic_limit-v2.sh ens5 536870912000 &
+ps -ef|grep traffic_limit | grep -v grep|awk '{print $2}'|xargs kill -9 
+
+
+ps -ef|grep brook | grep -v grep|awk '{print $2}'|xargs kill -9 
+
+ISO6jCB8uM1K4b3R
+
+
+4MsyLP@VRr3#uf3Q
+nrp_pay_skip=https://web.mmda6954.xyz/website/page/payskip.html
+nrp_notify_url=https://127.0.0.1/test_notify_url
+nrp_return_url=https://web.mmda6954.xyz/website/page/paysuccess.html
+
+
+4MsyLP@VRr3#uf3QKN
+
+tls1338525411
+
+Z4cE3gT6iT9mL8k
+
+1429c477a75a33f532e3
+
+3ba9e5fb871c8afce3af73eeb2655b689c7b3e49
+
+tanz.kjsddns.com  17fa4a877a22ace5be
+wget https://gitee.com/t_deploy/shell_v2/raw/master/tanz/nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh
+
+d34cdb1d5769037f0b
+
+github
+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
+
+外网面板地址: http://tw1.kjsddns.com:8888/69ec6d75
+外网面板地址: http://114.42.208.4:8888/69ec6d75
+内网面板地址: http://10.82.5.25:8888/69ec6d75
+username: aeniyzkr
+password: ce184727
+
+外网面板地址: http://13.70.5.151:8888/37740c8e
+内网面板地址: http://10.0.0.4:8888/37740c8e
+username: 722rvtai
+password: d266d3dc
+
+auto msen, [2021/11/16 星期二 15:14]
+外网面板地址: http://20.205.58.105:8888/dd3de627
+内网面板地址: http://10.6.0.4:8888/dd3de627
+username: zlzqq1ac
+password: 0719fb3e
+
+
+外网面板地址: https://20.247.101.104:34334/e845e424
+内网面板地址: https://10.4.0.4:34334/e845e424
+username: xrjyqphh
+password: 37fee910
+
+https://www.cloudflare.com/
+woaichd1@protonmail.com
+8UShrD7@
+
+https://www.dynadot.com/
+kuaijiasu1
+Qq32f2121@
+
+
+
+Aa@147258369
+
+tanz.kjsddns.com
+kjsddns.com
+
+docker run -d --name=ddns -e API_KEY=3_kB661u7VPN4oEHlKoMeD6l2SIPtDpKsx6IQAoJ \
+  -e ZONE=kjsddns.com \
+  -e SUBDOMAIN=tw2 \
+  --restart=always oznu/cloudflare-ddns
+  
+  
+  1429c477a75a33f532e3
+db71d396f2046b4f004b375bd70d8209ac5bd435
+
+
+
+
+itms-beta://testflight.apple.com/v1/invite/b3763dde95db4b1b9cf92f278b98591dd79f597eb13f47dea5f7db4a27aaeca95c237475?ct=L7G33G8K6N&advp=10000&platform=ios
+pg_ctl.exe -D "D:\Program Files\PostgreSQL\10\data"  -w start
+cd D:\Program Files\PostgreSQL\10\bin
+pg_ctl.exe -D "D:\Program Files\PostgreSQL\10\data" initdb  --初始化数据库
+pg_ctl.exe -D "D:\Program Files\PostgreSQL\10\data" start --开启
+cd D:\project\odoo\openodoo\vda-program
+pg_ctl.exe start -D ..\data
+python odoo-bin --config="D:\project\odoo\openodoo\vda-program\debian\odoo.conf"
+
+http://13.70.5.151:8000/app/1545827445
+python3.6 manage.py runserver 0.0.0.0:8000 --noreload
+
+
+docker run -d \
+-m 256M \
+-p 8222:8222 \
+--restart=always \
+--log-driver="none" \
+-v /docker/logs/web:/logs \
+--name=kjs-web \
+-e "fh.redirect.url=s456s456.com" -e "JAVA_OPTS=-Xms256m -Xmx256m" registry.cn-shanghai.aliyuncs.com/v_swarm/v-web:1.0.0-SNAPSHOT
+
+https://suspicious-mclean-87b376.netlify.app/
+
+docker run -d \
+-m 128M \
+-p 8033:8033 \
+--restart=always \
+--log-driver="none" \
+-v /docker/logs/share:/logs \
+--name=share \
+-e "JAVA_OPTS=-Xms128m -Xmx128m" registry.cn-shanghai.aliyuncs.com/v_swarm/share:1.0.0-SNAPSHOT
+
+docker run -d -p 80:80 -p 443:443 --restart=always  -v /docker/nginx/conf/:/etc/nginx/ -v /docker/nginx/logs/:/var/log/nginx/ -v /docker/nginx/www/:/etc/nginx/html/ --name nginx nginx:1.12.2
+
+50.7.251.35 lsdhvdjjv9973784jvdhvksv
+
+https://vancouverdebate.ca/vancouver-debate-courses/
+
+https://fastlink.ws/
+
+你个鳖孙, [28.08.21 00:20]
+747618755@qq.com
+zp19880626
+
+
+!1Q2w3e!
+
+SysCons.getPlatType()sfajs_db@2020
+sfajs_db@2020
+4MsyLP@VRr3#uf3Q
+283381448@qq.com
+tls1338525411
+#导出数据库数据
+./mysqldump -uroot -p kjs_mem > /tmp/kjs_mem_last.sql
+#导入数据库数据
+./mysql -uroot -p kjs_db < /tmp/kjs_mem_last.sql
+
+
+
+docker run -d \
+-m 128M \
+-p 8222:8222 \
+--restart=always \
+--log-driver="none" \
+-v /docker/logs/web:/logs \
+--name=kjs-web \
+-e "spring.profiles.active=prod" -e "JAVA_OPTS=-Xms128m -Xmx128m" registry.cn-shanghai.aliyuncs.com/v_swarm/v-web:1.0.0-SNAPSHOT
+
+
+docker run -m 512M --net host -d -p $3:$3 -p $4:$4 --restart=always --log-driver="none" -v /docker/config/$6:/config -v /docker/logs/$6:/logs -v /docker/data/$6:/data --name=$6 -e "logging.level.com.vpn.serv=info" -e "JAVA_OPTS=-Xms128m -Xmx512m" -e "spring.profiles.active=prod" -e "server.port=$4" -e "vpn.proxy.localPort=$3" -e "proxy.direct.name=$1" --init automsen/tpr:$5-SNAPSHOT
+
+https://myssl.com/
+
+mvn mybatis-generator:generate
+
+
+
+my traceroute
+mtr ip -R
+
+wget https://cdn.ipip.net/17mon/besttrace4linux.zip
+./besttrace -q 1 asia2.ethermine.org
+
+https://pub.down.zhuozhuomi.com/kjs/ad/kuaijiasu-2.0.9-debug.apk
+
+#ssl证书申请
+acme.sh  --register-account  --server ssl.com  -m  283381448@qq.com  \
+             --eab-kid  abcdefg     --eab-hmac-key  abcdefg
+			 
+ERR_CONNECTION_RESET
+
+https://developer49b.baidupan.com/111312bb/2021/10/01/cd8174c2dd27f43e99809664462c08c9.exe?st=SyMTrUcQ01qi8n_nZEGyVA&e=1636781595&b=VGALagBzA3JYflF3ADUFZAU0XCADUQFiASYOdlYhUXNWNgslVGVWfQNnA3sHMgN_aBzc_c&fi=53344359&pid=171-113-47-223&up=2
+
+
+https://api.telegram.org/bot2119459424:AAFYV9ZuGV3GsUinUbvt8iGXUvDf_QYNnYo/sendMessage?chat_id=1373459932&text=tellmenow
+
+#只对id为32的韩国流量进行监控达到1.5T开始报警，cycle_interval周期1个小时，cycle_start：周期开始时间，transfer_all_cycle 周期内双向流量和, cover 0监控所有 1忽略所有
+[{"type":"transfer_all_cycle","min":1649267441664,"max":1979120929996,"cycle_start":"2021-11-24T00:00:00Z","cycle_interval":1,"duration":10,"cover":1,"ignore":{"32":true}}]
+
+[{"type":"transfer_all_cycle","max":644245094400,"cycle_start":"2021-12-05T00:00:00Z","cycle_interval":24,"duration":10,"cover":1,"ignore":{"5":true,"54":true,"55",true}}]
+
+[{"type":"transfer_in","min":214748364800,"max":268435456000,"cycle_start":"0001-01-01T00:00:00Z","duration":10,"cover":1,"ignore":{"32":true}}]
+
+#对离线监控 只对id为51的做离线监控
+[{"type":"offline","cycle_start":"2021-11-24T00:00:00Z","duration":30,"cover":1,"ignore":{"51":true}}]
+
+
+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
+
+az.gangzai.moe
+biaosun111
+biaosun111
+
+#台湾
+https://sa656xz.com/download/hb/ad/heibao-2.1.6_jiagu.apk
+https://sa656xz.com/download/hb/hb_ad.apk
+
+https://sa656xz.com/download/kjs/kjs_ad.apk
+#ip版
+https://dw.sa656xz.com/kjs/pc/fastspeed_2.1.1_ip.exe
+
+---网盘
+https://s456s456.com/down/hb/sgwjg —-未加固
+https://s456s456.com/down/hb/sgjg —加固
+https://s456s456.com/down/kjs/ad_unsign
+
+https://www.internetdownloadmanager.com/
+
+
+curl  https://get.acme.sh | sh
+
+globl key  :dd09d67522e7dfa49cde1048285fea534e6a8
+
+
+export CF_Account_ID="a913df41d466e3ec671033ed9d4e4362"
+export CF_Token="3rmzKcpIKQ7aXWK2TTZO-2sCBGtfa7G_ZJbKrv6m"
+
+export CF_Zone_ID=7650c587d3b58817f9eaaa788c4e9911
+./acme.sh --issue --dns dns_cf -d api.kuaijiasuhouduan.com -d *.api.kuaijiasuhouduan.com --force
+./acme.sh --install-cert -d api.kuaijiasuhouduan.com --key-file /docker/nginx/conf/conf.d/cert/api.kuaijiasuhouduan.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/api.kuaijiasuhouduan.com/fullchain.pem
+
+export CF_Zone_ID=7650c587d3b58817f9eaaa788c4e9911
+./acme.sh --issue --dns dns_cf -d kuaijiasuhouduan.com -d *.kuaijiasuhouduan.com --force
+./acme.sh --install-cert -d kuaijiasuhouduan.com --key-file /docker/nginx/conf/conf.d/cert/kuaijiasuhouduan.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/kuaijiasuhouduan.com/fullchain.pem
+
+export CF_Zone_ID=276b49c51f878013ca175c0859fed6c7
+
+./acme.sh --issue --dns dns_cf -d kuaijiasujiasuqi.com -d *.kuaijiasujiasuqi.com --force
+./acme.sh --install-cert -d kuaijiasujiasuqi.com --key-file /docker/nginx/conf/conf.d/cert/kuaijiasujiasuqi.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/kuaijiasujiasuqi.com/fullchain.pem
+
+./acme.sh --issue --dns dns_cf -d api.kuaijiasujiasuqi.com -d *.api.kuaijiasujiasuqi.com --force
+./acme.sh --install-cert -d api.kuaijiasujiasuqi.com --key-file /docker/nginx/conf/conf.d/cert/api.kuaijiasujiasuqi.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/api.kuaijiasujiasuqi.com/fullchain.pem
+
+export CF_Zone_ID=50d9261023c8c0334e54bd906d84dc74
+./acme.sh --issue --dns dns_cf -d api.heibaohouduan.com -d *.api.heibaohouduan.com --force
+./acme.sh --install-cert -d api.heibaohouduan.com -d *.api.heibaohouduan.com --key-file /docker/nginx/conf/conf.d/cert/api.heibaohouduan.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/api.heibaohouduan.com/fullchain.pem
+
+export CF_Zone_ID=50d9261023c8c0334e54bd906d84dc74
+./acme.sh --issue --dns dns_cf -d heibaohouduan.com -d *.heibaohouduan.com --force
+./acme.sh --install-cert -d api.heibaohouduan.com -d *.heibaohouduan.com --key-file /docker/nginx/conf/conf.d/cert/heibaohouduan.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/heibaohouduan.com/fullchain.pem
+
+
+export CF_Zone_ID=c3c30b4c3ee84b740fb463a1050a1363
+./acme.sh --issue --dns dns_cf -d api.heibaojiasuqi.com -d *.api.heibaojiasuqi.com --force
+./acme.sh --install-cert -d api.heibaojiasuqi.com -d *.api.heibaojiasuqi.com --key-file /docker/nginx/conf/conf.d/cert/api.heibaojiasuqi.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/api.heibaojiasuqi.com/fullchain.pem
+
+export CF_Zone_ID=c3c30b4c3ee84b740fb463a1050a1363
+./acme.sh --issue --dns dns_cf -d web.heibaojiasuqi.com -d *.web.heibaojiasuqi.com --force
+./acme.sh --install-cert -d web.heibaojiasuqi.com -d *.web.heibaojiasuqi.com --key-file /docker/nginx/conf/conf.d/cert/web.heibaojiasuqi.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/web.heibaojiasuqi.com/fullchain.pem
+
+./acme.sh --issue --dns dns_ali -d heibaojiasuqi.com -d *.heibaojiasuqi.com --force
+./acme.sh --install-cert -d heibaojiasuqi.com -d *.heibaojiasuqi.com --key-file /docker/nginx/conf/conf.d/cert/heibaojiasuqi.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/heibaojiasuqi.com/fullchain.pem
+
+export CF_Zone_ID=f6257ce0c28adf12e82508853d9ecc13
+./acme.sh --issue --dns dns_cf -d web.heibaohouduan.xyz -d *.web.heibaohouduan.xyz --force
+./acme.sh --install-cert -d web.heibaohouduan.xyz -d *.web.heibaohouduan.xyz --key-file /docker/nginx/conf/conf.d/cert/web.heibaohouduan.xyz/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/web.heibaohouduan.xyz /fullchain.pem
+
+
+export CF_Zone_ID=667049be0681c759827b71fcd3cb7a62
+./acme.sh --issue --dns dns_cf -d yingduxiang.com -d *.yingduxiang.com --force
+ 1023  ./acme.sh --install-cert -d yingduxiang.com -d *.yingduxiang.com --key-file /docker/nginx/conf/conf.d/cert/yingduxiang.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/yingduxiang.com/fullchain.pem
+
+export CF_Zone_ID=aad468acf52901649eeb93fcbd089c75
+./acme.sh --issue --dns dns_cf -d fbw086.com -d *.fbw086.com --force
+./acme.sh --install-cert -d fbw086.com -d *.fbw086.com --key-file /docker/nginx/conf/conf.d/cert/fbw086.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/fbw086.com/fullchain.pem
+
+export CF_Zone_ID=749d955bc85ea76171597e22f6d35a85
+./acme.sh --issue --dns dns_cf -d zidanxianjin.com -d *.zidanxianjin.com --force
+./acme.sh --install-cert -d zidanxianjin.com -d *.zidanxianjin.com --key-file /docker/nginx/conf/conf.d/cert/zidanxianjin.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/zidanxianjin.com/fullchain.pem
+
+export CF_Zone_ID=9553423ca9c1c997057e19b136e3e8d7
+./acme.sh --issue --dns dns_cf -d 466afa.com -d *.466afa.com --force
+./acme.sh --install-cert -d 466afa.com -d *.466afa.com --key-file /docker/nginx/conf/conf.d/cert/466afa.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/466afa.com/fullchain.pem
+
+
+export CF_Zone_ID=91d32b1a6273331c1fd601e15a9b1b77
+./acme.sh --issue --dns dns_cf -d dsags651.com -d *.dsags651.com --force
+./acme.sh --install-cert -d dsags651.com -d *.dsags651.com --key-file /docker/nginx/conf/conf.d/cert/dsags651.com/privkey.pem --fullchain-file /docker/nginx/conf/conf.d/cert/dsags651.com/fullchain.pem
+
+
+export CF_Zone_ID=6da85c980ac0421e21d3fcafda2e583d
+./acme.sh --issue --dns dns_cf -d kjslink.me -d *.kjslink.me --force
+./acme.sh --install-cert -d kjslink.me -d *.kjslink.me --key-file /docker/nginx/confs/cert/kjslink.me/privkey.pem --fullchain-file /docker/nginx/confs/cert/kjslink.me/fullchain.pem
+
+export CF_Zone_ID=0e42a5b81e327667b93316f1e8e085ed
+./acme.sh --issue --dns dns_cf -d kjskjs-a.xyz -d *.kjskjs-a.xyz --force
+./acme.sh --install-cert -d kjskjs-a.xyz -d *.kjskjs-a.xyz --key-file /docker/nginx/confs/cert/kjs/privkey.pem --fullchain-file /docker/nginx/confs/cert/kjs/fullchain.pem
+
+export CF_Zone_ID=a1d66d8f276d00b3d295d0153a7f81f1
+./acme.sh --issue --dns dns_cf -d kjskjs-b.xyz -d *.kjskjs-b.xyz --force
+./acme.sh --install-cert -d kjskjs-b.xyz -d *.kjskjs-b.xyz --key-file /docker/nginx/confs/cert/kjs/privkey.pem --fullchain-file /docker/nginx/confs/cert/kjs/fullchain.pem
+
+export CF_Zone_ID=7c112618c36fa0184a0673d4ae1a57a3
+./acme.sh --issue --dns dns_cf -d kjsjsq.xyz -d *.kjsjsq.xyz --force
+./acme.sh --install-cert -d kjsjsq.xyz -d *.kjsjsq.xyz --key-file /docker/nginx/confs/cert/kjsjsq.xyz/privkey.pem --fullchain-file /docker/nginx/confs/cert/kjsjsq.xyz/fullchain.pem
+
+export CF_Zone_ID=73bd133afb43dc4a8c3c3633acaa0f97
+./acme.sh --issue --dns dns_cf -d d12d12.com -d *.d12d12.com --force
+./acme.sh --install-cert -d d12d12.com -d *.d12d12.com --key-file /docker/nginx/confs/cert/d12d12.com/privkey.pem --fullchain-file /docker/nginx/confs/cert/d12d12.com/fullchain.pem
+
+export CF_Zone_ID=cde75b6e0a9fe274159e06b4cf364ec0
+./acme.sh --issue --dns dns_cf -d gjk1jng.xyz -d *.gjk1jng.xyz --force
+./acme.sh --install-cert -d gjk1jng.xyz -d *.gjk1jng.xyz --key-file /docker/nginx/confs/cert/gjk1jng.xyz/privkey.pem --fullchain-file /docker/nginx/confs/cert/gjk1jng.xyz/fullchain.pem
+
+
+export CF_Zone_ID=c8d7ab5e9e1ebad18f7f4fd1114f3c44
+./acme.sh --issue --dns dns_cf -d as65df.xyz -d *.as65df.xyz --force
+./acme.sh --install-cert -d as65df.xyz -d *.as65df.xyz --key-file /docker/nginx/confs/cert/as65df.xyz/privkey.pem --fullchain-file /docker/nginx/confs/cert/as65df.xyz/fullchain.pem
+
+export CF_Zone_ID=6e5d4103709fe29a9354c62ef5a6727d
+./acme.sh --issue --dns dns_cf -d 685asadf.xyz -d *.685asadf.xyz --force
+./acme.sh --install-cert -d 685asadf.xyz -d *.685asadf.xyz --key-file /docker/nginx/confs/cert/685asadf.xyz/privkey.pem --fullchain-file /docker/nginx/confs/cert/685asadf.xyz/fullchain.pem
+
+
+export CF_Zone_ID=1a3f30555d6c15e2b9245a54ff693cc6
+./acme.sh --issue --dns dns_cf -d afasadf.xyz -d *.afasadf.xyz --force
+./acme.sh --install-cert -d afasadf.xyz -d *.afasadf.xyz --key-file /docker/nginx/confs/cert/afasadf.xyz/privkey.pem --fullchain-file /docker/nginx/confs/cert/afasadf.xyz/fullchain.pem
+
+
+export CF_Zone_ID=e58d25d84fa1f8344ade12b091955a8d
+./acme.sh --issue --dns dns_cf -d s456s456.com -d *.s456s456.com --force
+./acme.sh --install-cert -d s456s456.com -d *.s456s456.com --key-file /docker/nginx/confs/cert/s456s456.com/privkey.pem --fullchain-file /docker/nginx/confs/cert/s456s456.com/fullchain.pem
+
+
+cde75b6e0a9fe274159e06b4cf364ec0
+
+./brook relays -l :24443 hk-eth.hiveon.net:24443 -l :14444 hk-eth.hiveon.net:14444 -l :14443 aspac1-eth.hiveon.net:14444 -l :34443 random.iothingstoday.com:443 -l :44443 eth.sg.antpool.com:443
+
+
+--未备案
+dsags651.com	
+466afa.com
+
+--已备案
+yingduxiang.com		
+zidanxianjin.com
+fbw086.com
+
+https://gominerproxy.github.io/zh_cn/
+# 下述下載地址為示例，請勿原樣復制，請見 Github Release 右鍵復制最新版本和對應版本的鏈接
+wget https://github.com/GoMinerProxy/GoMinerProxy/releases/download/1.2.2/GoMinerProxy_v1.2.2_linux_amd64.tar.gz
+# 解壓 tar.gz 壓縮包
+tar -zxvf GoMinerProxy_v1.2.2_linux_amd64.tar.gz
+# 賦予執行權限
+chmod 777 GoMinerProxy
+# 創建窗口
+yum install screen
+screen -S go_miner_proxy
+# 啟動 GoMinerProxy
+./GoMinerProxy
+
+
+https://github.com/cnchen88/CC-Miner-Tax-Proxy/tree/master/linux
+
+https://github.com/SmileZD/MinerServerFee
+
+https://github.com/MinerProxy/MinerProxy
+
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+
+
+#查ip归属
+curl -L ip.tool.lu
+
+curl -X PUT -H "Content-Type:application/json" -d '{"pathName":"/general/hk","nodeAddr":"127.0.0.1:20175"}' http://localhost:20208/config
+curl -X PUT -H "Content-Type:application/json" -d '{"pathName":"/general/hk","nodeAddr":"20.24.75.1:10175"}' http://localhost:20208/config
+
+修改时区
+sudo rm /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+ docker run -d -p 80:80 -p 443:443 -p 8012:8012 -p 8022:8022 --restart=always  -v /docker/nginx/confs/:/etc/nginx/conf.d/ -v /docker/nginx/logs/:/var/log/nginx/ -v /docker/nginx/www/:/etc/nginx/html/ --name nginx nginx:1.14.2
+
+ipconfig /flushdns
+https://hiveon.net/eth/workers_zh?miner=0xF41492fB02208B965981122A415BE4288EC34C3E
+
+https://hiveon.net/eth/workers_zh?miner=0xB32408aCF039637bA2E26393FB7cb84eDaE4cb8a
+
+fa168123
+
+kjsjsq.com #跳转官网
+kjskjs.com #跳转用户订阅后台
+
+
+
+
+1自定义DNS服务器一定要写OP的ip地址
+
+-s 后是源ip -d后是目标ip根据实际情况进行修改to-ports 10811 的端口对应的是redsocks提供服务的端口
+iptables -t nat -A PREROUTING -i br-lan -p tcp -j REDIRECT --to-ports 1080
+
+iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
+
+官方最新
+http://archive.openwrt.org/releases/21.02.2/targets/x86/64/
+https://v2raya.org/docs/prologue/installation/openwrt/
+
+https://github.com/xiaorouji/openwrt-passwall/discussions/1603
+
+https://blog.51cto.com/ganzy/2585435
+
+
+deb https://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb-src https://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb https://mirrors.aliyun.com/debian-security buster/updates main
+deb-src https://mirrors.aliyun.com/debian-security buster/updates main
+deb https://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb-src https://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb https://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+deb-src https://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+
+
+{"timestamp":"2022-05-16T11:01:27.071+0000","status":500,"error":"Internal Server Error","message":"REJECTED_SEMAPHORE_EXECUTION"}
+
+
+alpenliebeltd.xyz
+tjqnh.com
+heibaojsq.xyz
+zhuozhuomi.com
+youhuisubao.cn
+
+米波没学大1
+又来305T
+https://web.heibaojiasuqi.com/pub_api/advert/redirect/1588476814023458818?redirectUrl=https://h5282.com:8825

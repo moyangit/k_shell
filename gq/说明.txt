@@ -1,0 +1,46 @@
+id 印度
+ch 中国
+ag 美国
+am 澳门
+sk 韩国
+jp 日本
+sg 新加坡
+tw 台湾
+agt 阿根廷
+hk 香港
+ci 智利
+ice 冰岛
+rs 俄罗斯
+td 泰国
+as 澳大利亚
+isa 马来西亚
+bt 英国
+bz 巴西
+cnd 加拿大
+fn 法国
+gm 德国
+hn 荷兰
+
+yn 越南
+ydl 意大利
+lr 印度尼西亚
+plp 菲律宾
+ngr 尼日利亚
+
+sz 瑞士
+nzl 新西兰
+atr 奥地利
+sa 南非
+nw 挪威
+ukl 乌克兰
+sd 瑞典
+pty 葡萄牙
+tk 土耳其
+fil 芬兰
+
+bn 波兰
+xby 西班牙
+xyl 匈牙利
+lm 罗马利亚
+eg 埃及
+trk 土耳其
