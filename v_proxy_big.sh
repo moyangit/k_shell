@@ -51,5 +51,5 @@ docker rm $4
 set -e
 docker run --net host -d -p $1:$1 -p $2:$2 --log-driver="none" --restart=always -v /docker/config/$4:/config -v /docker/logs/$4:/logs -v /docker/cert/$4:/cert -v /docker/data/$4:/data --name=$4 -e "logging.level.com.vpn.serv=info" -e "JAVA_OPTS=-Xms2g -Xmx4g" -e "spring.profiles.active=prod" -e "server.uid=$5" -e "server.port=$2" -e "vpn.proxy.localPort=$1" --init moyandoc/tpr:$3-SNAPSHOT
 echo "---start sccuess-------"
-erver.port=$2" -e "vpn.proxy.localPort=$1" --init registry.cn-shanghai.aliyuncs.com/v_swarm/v-proxy:$3-SNAPSHOT
+
 echo "---start sccuess-------"

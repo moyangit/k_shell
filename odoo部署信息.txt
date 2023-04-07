@@ -1,0 +1,94 @@
+# 云主机
+157.245.241.216
+vdaRoot2021w
+
+# 按照postgresql
+sudo dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+sudo dnf -qy module disable postgresql
+sudo dnf install -y postgresql10-server
+sudo /usr/pgsql-10/bin/postgresql-10-setup initdb
+sudo systemctl enable postgresql-10
+sudo systemctl start postgresql-10
+
+数据库端口：5432
+
+PostgreSQL会创建一个默认的linux用户postgres，修改该用户密码的方法如下：
+步骤一：删除用户postgres的密码
+sudo  passwd -d postgres
+步骤二：设置用户postgres的密码
+sudo -u postgres passwd
+系统提示输入新的密码
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+最后密码修改为了：vdaroot2021
+
+
+odoo 数据库用户名
+odoo
+
+服务目录：/root/vda-program
+启动服务：nohup python3 ./odoo-bin &
+停止服务：
+通过ps -ef |  grep python3 查询进程pid
+kill -9 “pid” 停止服务
+
+服务访问地址：http://157.245.241.216:8069
+用户名：odoo@163.com
+密码：vdapwd
+
+vda.adaptivemake.com 8069
+
+https://suspicious-mclean-87b376.netlify.app/
+
+python D:\project\odoo\openodoo\vda\vda-program\odoo-bin --config="D:\project\odoo\openodoo\vda\vda-program\debian\odoo.conf" -d odoo -i website_sale
+
+odoo.exceptions.ValidationError: Invalid view My Schedule
+
+P@ssw0rd
+
+157.245.241.216:5432    数据库名：ommo  用户名和密码：odoo/12345
+
+psql -h 127.0.0.1 -U postgres
+psql -h 127.0.0.1 -U odoo
+\list #显示所有的数据库
+psql -h 127.0.0.1 -U odoo -d ommo
+create database ommo
+createdb -h 127.0.0.1 -p 5432 -U odoo ommo
+dropdb -h 127.0.0.1 -p 5432 -U odoo ommo
+password ******
+
+gzip -cd ommo_2021-11-23_05-22-41.zip | psql -h 127.0.0.1 -U odoo -d ommo
+
+1927430 1927431
+
+修改自增
+select setval('product_template_attribute_line_id_seq',(select max(id) from gx_history))
+
+select setval('product_template_attribute_line_id_seq',(select max(id) from product_template_attribute_line))
+
+select setval('product_template_attribute_value_id_seq',(select max(id) from product_template_attribute_value))
+
+
+    <record id="student_view_filter" model="ir.ui.view">
+            <field name="name">Student</field>
+            <field name="model">res.member</field>
+            <field name="arch" type="xml">
+                <search string="Search Students">
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                    <field name="family_id" operator="child_of"/>
+
+                    
+                    <!-- <filter string="My Orders" domain="[('user_id', '=', uid)]" name="my_sale_orders_filter"/>
+                    <filter invisible="1" string="Late Activities" name="activities_overdue"
+                        domain="[('my_activity_date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"
+                        help="Show all records which has next action date is before today"/>
+                    <filter invisible="1" string="Today Activities" name="activities_today"
+                        domain="[('my_activity_date_deadline', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter invisible="1" string="Future Activities" name="activities_upcoming_all"
+                        domain="[('my_activity_date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))]"/> -->
+                    
+               </search>
+            </field>
+        </record>
