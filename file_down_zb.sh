@@ -80,11 +80,11 @@ EOF
 
 #down files to local
 #hb file
-set +e
+# set +e
 
-sudo wget -O /docker/nginx/www/down/1.apk https://dw.kuxe2756.xyz/downpg/zb/ad
+# sudo wget -O /docker/nginx/www/down/1.apk https://dw.kuxe2756.xyz/downpg/zb/ad
 
-set -e
+# set -e
 
 sudo chmod -R 777 /docker/*
 
