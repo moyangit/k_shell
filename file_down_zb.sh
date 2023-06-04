@@ -59,23 +59,23 @@ server {
 
 EOF
 
-set +e
-#auto config dns host
-exist=`docker inspect --format '{{.State.Running}}' ddns`
-echo "ddns contain $exist"
-if [ "${exist}" != "true" ]; 
-then
-docker run -d --name=ddns -e API_KEY=dd09d67522e7dfa49cde1048285fea534e6a8 -e ZONE=d12d12.com -e SUBDOMAIN=$1 --restart=always oznu/cloudflare-ddns
-echo "ddns run success"
-else
-	set +e
-	docker stop ddns
-	docker rm ddns
-	set -e
-	docker run -d --name=ddns -e API_KEY=dd09d67522e7dfa49cde1048285fea534e6a8 -e ZONE=d12d12.com -e SUBDOMAIN=$1 --restart=always oznu/cloudflare-ddns
-	echo "ddns run success"
-fi
-set -e
+# set +e
+# #auto config dns host
+# exist=`docker inspect --format '{{.State.Running}}' ddns`
+# echo "ddns contain $exist"
+# if [ "${exist}" != "true" ]; 
+# then
+# docker run -d --name=ddns -e API_KEY=dd09d67522e7dfa49cde1048285fea534e6a8 -e ZONE=d12d12.com -e SUBDOMAIN=$1 --restart=always oznu/cloudflare-ddns
+# echo "ddns run success"
+# else
+# 	set +e
+# 	docker stop ddns
+# 	docker rm ddns
+# 	set -e
+# 	docker run -d --name=ddns -e API_KEY=dd09d67522e7dfa49cde1048285fea534e6a8 -e ZONE=d12d12.com -e SUBDOMAIN=$1 --restart=always oznu/cloudflare-ddns
+# 	echo "ddns run success"
+# fi
+# set -e
 
 
 #down files to local
@@ -96,7 +96,7 @@ set -e
 set +e
 exist=`docker inspect --format '{{.State.Running}}' down`
 if [ "${exist}" != "true" ]; then
-docker run -d -p 80:80 -p 443:443 --restart=always  -v /docker/nginx/confs/:/etc/nginx/conf.d/ -v /docker/nginx/logs/:/var/log/nginx/ -v /docker/nginx/www/:/etc/nginx/html/ --name down moyandoc/nginx:1.14.2
+docker run -d -p 80:80 --restart=always  -v /docker/nginx/confs/:/etc/nginx/conf.d/ -v /docker/nginx/logs/:/var/log/nginx/ -v /docker/nginx/www/:/etc/nginx/html/ --name down moyandoc/nginx:1.14.2
 echo "nginx run success"
 fi
 set -e
