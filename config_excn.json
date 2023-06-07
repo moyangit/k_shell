@@ -1,1 +1,95 @@
+{
+  "log": {
+    "loglevel": "error", // 日志级别
+    "access": "/var/log/v2ray/access.log",  // 这是 Windows 系统的路径
+    "error": "/var/log/v2ray/error.log"
+  },
+  "api":{
+   "tag": "api",
+   "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ]
+  },
+  "inbounds": [{
+    "port": local_flow_port,
+    "tag":"mem-proxy",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "5a26cc45-3e1a-4d33-8d1a-e19a5e6058b8",
+          "level": 0,
+          "alterId": 0
+        },
+		{
+          "id": "af39a32f-270c-4a9d-bb5f-e77e3c653d65",
+          "level": 0,
+          "alterId": 0
+        },
+		{
+          "id": "e8e2d3ee-8183-419f-a7e8-1cd94207b395",
+          "level": 0,
+          "alterId": 0
+        }
+      ]
+    },
+	"streamSettings": {
+		"network": "ws",
+		"wsSettings":{
+		   "path":"/general/country_code"
+		}	
+	},
+	"sniffing": {
+		"enabled": true,
+		"destOverride": [
+			"http",
+			"tls"
+		]
+	}
+  },
+  {
+    "listen": "0.0.0.0",
+    "port": 10075,
+    "protocol": "dokodemo-door",
+    "settings": {
+        "address": "0.0.0.0"
+     },
+    "tag": "api"
+  }
+],
 
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+  "routing": {
+    "rules": [
+	  {
+        "type": "field",
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ]
+      },
+      {
+        "inboundTag": ["api"],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "type": "field",
+        "outboundTag": "blocked",
+        "domain": [
+            "geosite:cn"
+        ]
+      }
+    ],
+    "strategy": "rules"
+  }
+}
