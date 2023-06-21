@@ -38,7 +38,7 @@
 	"streamSettings": {
 		"network": "ws",
 		"wsSettings":{
-		   "path":"/general/ag"
+		   "path":"/general/country_code"
 		}	
 	},
 	"sniffing": {
