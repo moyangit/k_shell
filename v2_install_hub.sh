@@ -116,10 +116,10 @@ fi
 echo "---start run v2----"
 
 
-exist=`docker inspect --format '{{.State.Running}}' tv2`
+#exist=`docker inspect --format '{{.State.Running}}' tv2`
 
 
-if [ "${exist}" != "true" ]; 
+if [[ -n $(docker ps -q -f "name=tv2") ]];
 then
 docker run -d --net host --name tv2 \
 --restart=always \
