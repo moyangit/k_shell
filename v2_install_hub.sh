@@ -121,14 +121,6 @@ echo "---start run v2----"
 
 if [[ -n $(docker ps -q -f "name=tv2") ]];
 then
-docker run -d --net host --name tv2 \
---restart=always \
--v /docker/tv2:/etc/v2ray \
--v /docker/tv2/logs:/var/log/v2ray \
---restart=always moyandoc/kv2:4.31.0
-
-else
-	
 	set +e
 	docker stop tv2 
 	docker rm tv2
@@ -138,6 +130,16 @@ else
 	-v /docker/tv2:/etc/v2ray \
 	-v /docker/tv2/logs:/var/log/v2ray \
 	--restart=always moyandoc/kv2:4.31.0
+
+else
+
+	docker run -d --net host --name tv2 \
+	--restart=always \
+	-v /docker/tv2:/etc/v2ray \
+	-v /docker/tv2/logs:/var/log/v2ray \
+	--restart=always moyandoc/kv2:4.31.0
+	
+
 	
 echo "--v2 run success"
 fi
