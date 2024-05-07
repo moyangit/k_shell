@@ -103,7 +103,8 @@ sudo rm -rf /docker/tv2
 
 sudo mkdir -p /docker/tv2/
 
-sudo wget -O /docker/tv2/config.json https://raw.githubusercontent.com/moyangit/k_shell/master/config_extg.json 
+#sudo wget -O /docker/tv2/config.json https://raw.githubusercontent.com/moyangit/k_shell/master/config_extg.json 
+sudo wget -O /docker/tv2/config.json  https://raw.githubusercontent.com/kuaijiasu/shell/main/config_extg.json
 
 sudo sed -i "s/country_code/$1/g" /docker/tv2/config.json
 sudo sed -i "s/local_flow_port/$7/g" /docker/tv2/config.json
