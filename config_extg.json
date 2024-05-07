@@ -83,6 +83,14 @@
 	"type": "field"
       },
       {
+        "type":"field",
+        "domain":[
+        "apis.google.com",
+        "mtalk.google.com"
+        ],
+        "outboundTag":"mem-proxy"
+      },
+      {
         "type": "field",
         "domain": [
             "google.com",
